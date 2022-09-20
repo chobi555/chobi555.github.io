@@ -1,0 +1,125 @@
+body {
+    background-color: #d3d3d3;
+}
+
+header {
+    position: relative;
+    padding-left: 100px;
+    
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    right: 100px;
+}
+
+.lists {
+    display: flex;
+    list-style-type: none;
+    text-align: center;
+}
+
+a {
+    color: black;
+    text-decoration:none;
+}
+
+.list {
+    color: black;
+    padding-right: 50px;
+    font-weight: bold;
+}
+
+.list:hover {
+    color: white;
+    font-size: 20px;
+}
+
+.header {
+    border-radius: 10px/10px;
+    width: 290px;
+    background-color: aliceblue;
+    transition: all 1.0s ease-in-out;
+}
+
+section {
+    background-image: url(images/back.png);
+}
+
+.introduction {
+    display: flex;
+}
+
+.images {
+    padding-top: 100px;
+    text-align: center;
+}
+
+.image {
+    width: 100%;
+}
+
+.media {
+    padding-top: 50px;
+    text-align: center;  
+}
+
+.text {
+    width: 80%;
+}
+
+.chobies {
+    padding-top: 105px;
+    width: 100%;
+}
+
+.animes, .games {
+    text-align: center;
+}
+
+.ranking {
+    counter-reset: rank;
+}
+
+
+.rank {
+    position: relative;
+    list-style: none;   
+}
+
+.ranking {
+  counter-reset: rank;
+}
+ 
+.ranking li {
+  position: relative;
+}
+ 
+.ranking li:not(:last-child) {
+  margin-bottom: 100px;
+}
+ 
+.ranking li::before { 
+  counter-increment: rank;
+  content: counter(rank) " 位";
+  position: absolute;
+  padding: 8px 14px;
+  font-size: 1.2em;
+  color: #fff; /* 文字色 */
+  background: rgba(0,0,0,0.8); 
+}
+ 
+.ranking img { 
+  width: 350px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.footer {
+    text-align: center;
+}
+
+.sns {
+    text-align: center;
+}
