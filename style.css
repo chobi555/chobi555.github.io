@@ -1,4 +1,5 @@
 body {
+    margin: 0;
     background-color: #d3d3d3;
 }
 
@@ -62,7 +63,7 @@ section {
 
 .media {
     padding-top: 50px;
-    text-align: center;  
+    text-align: center;
 }
 
 .text {
@@ -74,7 +75,7 @@ section {
     width: 100%;
 }
 
-.animes, .games {
+.animes, .games, .pokeka {
     text-align: center;
 }
 
@@ -89,31 +90,39 @@ section {
 }
 
 .ranking {
-  counter-reset: rank;
+    margin: 0;
+    counter-reset: rank;
 }
  
 .ranking li {
-  position: relative;
-}
- 
-.ranking li:not(:last-child) {
-  margin-bottom: 100px;
+    position: relative;
 }
  
 .ranking li::before { 
-  counter-increment: rank;
-  content: counter(rank) " 位";
-  position: absolute;
-  padding: 8px 14px;
-  font-size: 1.2em;
-  color: #fff; /* 文字色 */
-  background: rgba(0,0,0,0.8); 
+    counter-increment: rank;
+    content: counter(rank) " 位";
+    position: absolute;
+    padding: 8px 14px;
+    font-size: 1.2em;
+    color: #fff; /* 文字色 */
+    background: rgba(0,0,0,0.8); 
 }
  
 .ranking img { 
-  width: 350px;
-  height: 200px;
-  object-fit: cover;
+    width: 350px;
+    height: 100%;
+    object-fit: cover; /* 画像をきれいに表示 */
+}
+
+.explanation {
+    display: inline-block;
+    width: 50%;
+    padding-bottom: 3%;
+    text-align: left;
+}
+
+.qoute {
+    font-size: 5px;
 }
 
 .footer {
